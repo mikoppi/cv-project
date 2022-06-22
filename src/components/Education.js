@@ -6,14 +6,16 @@ export default class Education extends Component {
     const {
         onChangeEducation,
         education,
-        onAdd
+        onAdd,
+        onDelete
       } = this.props;
 
     const educationItems = education.map((educationItem) => {
       return (<EducationForm
         onChangeEducation={onChangeEducation}
         id={educationItem.id}
-        key={educationItem.id}/>)
+        key={educationItem.id}
+        onDelete={onDelete}/>)
     })
     return (
       <div>

@@ -15,6 +15,7 @@ export default class App extends Component {
        },
 
        education: [{
+        id: uniqid(),
         school: '',
         degree: '',
         to: '',
@@ -22,6 +23,7 @@ export default class App extends Component {
        }],
 
        experience: [{
+        id: uniqid(),
         company: '',
         title: '',
         description: '',
@@ -41,6 +43,8 @@ export default class App extends Component {
     })
   }
 
+
+
   handleChangeEducation = (e,id) =>{
     const {name, value} = e.target;
     this.setState((prevState) => {
@@ -54,34 +58,84 @@ export default class App extends Component {
     })
   }
 
+  
   handleAddEducation = () => {
     this.setState((prevState) => {
       return {...prevState, education: [
         ...prevState.education,{
           id: uniqid(),
-          name:"",
+          school:"",
           degree:"",
-          city:"",
           from:"",
           to:""
         }
       ]
+    }
+  })
+}
+
+handleDeleteEducation = (e,id) => {
+  console.log(id);
+  this.setState((prevState) => {
+    let remainingEducation = prevState.education.filter(item => item.id!==id)
+    return { ...prevState, education: [...remainingEducation] }
+  })
+}
+
+
+handleChangeExperience = (e,id) =>{
+  const {name, value} = e.target;
+  this.setState((prevState) => {
+    let newExperience = prevState.experience.map((experienceItem) => {
+      if (experienceItem.id === id){
+        return { ...experienceItem, [name]: value };
       }
+      return experienceItem;
     })
+    return { ...prevState, experience: [...newExperience] }
+  })
+}
+
+
+handleAddExperience = () => {
+  this.setState((prevState) => {
+    return {...prevState, experience: [
+      ...prevState.experience,{
+        id: uniqid(),
+        company:"",
+        title:"",
+        description:"",
+        from:"",
+        to:""
+      }
+    ]
   }
+})
+}
 
+handleDeleteExperience = (e,id) => {
+  console.log(id);
+  this.setState((prevState) => {
+    let remainingExperience = prevState.experience.filter(item => item.id!==id)
+    return { ...prevState, experience: [...remainingExperience] }
+  })
+}
 
-
-  //then you pass the handlers as props to the child components and so on...
+//then you pass the handlers as props to the child components and so on...
   render() {
     return (
       <div className='App'>
         <h1>CV Creator</h1>
         <CVForm
         onChangePersonal={this.handleChangePersonal}
-        onChangeEducation={this.handleChangeEducation}
         education= {this.state.education}
+        onChangeEducation={this.handleChangeEducation}
         onAddEducation= {this.handleAddEducation}
+        onDeleteEducation= {this.handleDeleteEducation}
+        experience= {this.state.experience}
+        onChangeExperience= {this.handleChangeExperience}
+        onAddExperience= {this.handleAddExperience}
+        onDeleteExperience={this.handleDeleteExperience}
         />
       </div>
     )

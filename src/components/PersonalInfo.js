@@ -9,7 +9,7 @@ export default class PersonalInfo extends Component {
         <h2>Personal information</h2>
         <input type='text' name='firstName' placeholder='First name:' onChange={onChangePersonal}/>
         <input type='text' name='lastName' placeholder='Last name:' onChange={onChangePersonal}/>
-        <input type='text' name='email' placeholder='Email:' onChange={onChangePersonal}/>
+        <input type='email' name='email' placeholder='Email:' onChange={onChangePersonal}/>
         <input type='text' name='phoneNumber' placeholder='Phone number:' onChange={onChangePersonal}/>
       </div>
     )
