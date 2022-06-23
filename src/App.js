@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CVForm from './components/CVForm'
 import uniqid from "uniqid";
+import Preview from './components/preview/Preview';
 
 export default class App extends Component {
   constructor(props) {
@@ -11,7 +12,8 @@ export default class App extends Component {
         firstName: '',
         lastName:'',
         email: '',
-        phoneNumber: ''
+        phoneNumber: '',
+        description: ''
        },
 
        education: [{
@@ -137,6 +139,7 @@ handleDeleteExperience = (e,id) => {
         onAddExperience= {this.handleAddExperience}
         onDeleteExperience={this.handleDeleteExperience}
         />
+        <Preview cvInfo={this.state}/>
       </div>
     )
   }

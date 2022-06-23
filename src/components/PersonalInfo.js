@@ -11,6 +11,8 @@ export default class PersonalInfo extends Component {
         <input type='text' name='lastName' placeholder='Last name:' onChange={onChangePersonal}/>
         <input type='email' name='email' placeholder='Email:' onChange={onChangePersonal}/>
         <input type='text' name='phoneNumber' placeholder='Phone number:' onChange={onChangePersonal}/>
+        <label htmlFor='description'>Description:</label>
+        <textarea rows="4" cols="50" name="description" onChange={onChangePersonal}></textarea>
       </div>
     )
   }
