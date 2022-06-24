@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './formStyles/ExperienceForm.css'
 
 export default class ExperienceForm extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class ExperienceForm extends Component {
 
 
     return (
-        <div>
+        <div className='experienceForm'>
         <input type="text" name="company" placeholder="Company:" onChange={(e) => onChangeExperience(e,id)}/>
         <input type="text" name="title" placeholder="Title:" onChange={(e) => onChangeExperience(e,id)}/>
         <label htmlFor='description'>Description:</label>

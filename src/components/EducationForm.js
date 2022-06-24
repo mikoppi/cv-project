@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import './formStyles/EducationForm.css'
 
 
 export default class EducationForm extends Component {
   render() {
     const {onChangeEducation,id, onDelete} = this.props;
     return (
-      <div>
+      <div className='educationForm'>
         <input type="text" name="school" placeholder="School:" onChange={(e) => onChangeEducation(e,id)}/>
         <input type="text" name="degree" placeholder="Degree:" onChange={(e) => onChangeEducation(e,id)}/>
         <label htmlFor='from'>From:</label>

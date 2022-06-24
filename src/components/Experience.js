@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ExperienceForm from './ExperienceForm'
+import './formStyles/Experience.css'
 
 export default class Experience extends Component {
   render() {
@@ -21,7 +22,7 @@ export default class Experience extends Component {
 
 
     return (
-        <div>
+        <div className='experience'>
             <h2>Work experience:</h2>
             {experienceItems}
             <button onClick={onAdd}>Add</button>

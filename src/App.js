@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import CVForm from './components/CVForm'
 import uniqid from "uniqid";
 import Preview from './components/preview/Preview';
+import './styles/App.css'
 
 export default class App extends Component {
   constructor(props) {
@@ -126,7 +127,7 @@ handleDeleteExperience = (e,id) => {
 //then you pass the handlers as props to the child components and so on...
   render() {
     return (
-      <div className='App'>
+      <div className='app'>
         <h1>CV Creator</h1>
         <CVForm
         onChangePersonal={this.handleChangePersonal}

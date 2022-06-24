@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import EducationForm from './EducationForm';
+import './formStyles/Education.css'
 
 export default class Education extends Component {
   render() {
@@ -18,7 +19,7 @@ export default class Education extends Component {
         onDelete={onDelete}/>)
     })
     return (
-      <div>
+      <div className='education'>
         <h2>Education</h2>
         {educationItems}
         <button onClick={onAdd}>Add</button>

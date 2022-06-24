@@ -10,7 +10,7 @@ export default class Preview extends Component {
       <div className='preview'>
         <TitleSection name={cvInfo.personalInfo}/>
         <MainSection info={cvInfo}/>
-        <PersonalSection/>
+        <PersonalSection info={cvInfo.personalInfo}/>
       </div>
     )
   }

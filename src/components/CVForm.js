@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PersonalInfo from './PersonalInfo'
 import Education from './Education'
 import Experience from './Experience'
+import './formStyles/CVForm.css'
 
 
 export default class CVForm extends Component {
@@ -17,7 +18,7 @@ export default class CVForm extends Component {
             onDeleteExperience
             }=this.props;
     return (
-      <div>
+      <div className='cvform'>
         <PersonalInfo onChangePersonal={onChangePersonal}/>
         <Education 
             onChangeEducation={onChangeEducation}
