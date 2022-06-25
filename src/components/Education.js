@@ -22,7 +22,7 @@ export default class Education extends Component {
       <div className='education'>
         <h2>Education</h2>
         {educationItems}
-        <button onClick={onAdd}>Add</button>
+        <button onClick={onAdd}>Add education</button>
       </div>
     )
   }

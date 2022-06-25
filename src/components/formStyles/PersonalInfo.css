@@ -2,5 +2,18 @@
     display: flex;
     flex-direction: column;
     width: 30em;
+    gap:10px;
+    margin-bottom: 10px;
 
+}
+
+.info > input, textarea {
+    border: 1px solid white;
+    border-radius: 5px;
+    height:20px;
+    font-family: inherit;
+}
+
+.info > h2 {
+    margin-top: 40px;
 }

@@ -1,8 +1,24 @@
 .cvform {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 60em;
+    width: 45em;
+    background-color: rgb(190, 188, 188);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.685) 0px 5px 15px;
+
     
 }
+
+.cvform > button {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    min-width: 5em;
+    font-family: inherit;
+    background-color: rgb(224, 202, 160);
+    border-width: 1px;
+    border-radius: 5px;
+}
+

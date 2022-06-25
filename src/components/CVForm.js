@@ -30,6 +30,7 @@ export default class CVForm extends Component {
             experience = {experience}
             onAdd = {onAddExperience}
             onDelete={onDeleteExperience}/>
+        <button>Reset</button>
       </div>
     )
   }

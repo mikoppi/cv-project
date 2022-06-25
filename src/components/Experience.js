@@ -23,9 +23,9 @@ export default class Experience extends Component {
 
     return (
         <div className='experience'>
-            <h2>Work experience:</h2>
+            <h2>Work experience</h2>
             {experienceItems}
-            <button onClick={onAdd}>Add</button>
+            <button onClick={onAdd}>Add experience</button>
         </div>
     )
   }

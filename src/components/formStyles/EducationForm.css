@@ -2,5 +2,23 @@
     display: flex;
     flex-direction: column;
     width: 30em;
+    gap:10px;
     
+}
+
+.educationForm > button {
+    margin-bottom: 20px;
+    width: inherit;
+    font-family: inherit;
+    background-color: rgb(223, 159, 159);
+    border-width: 1px;
+    border-radius: 5px;
+
+}
+
+.educationForm > input {
+    border: 1px solid white;
+    border-radius: 5px;
+    height:20px;
+    font-family: inherit;
 }

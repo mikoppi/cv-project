@@ -1,5 +1,13 @@
 .education {
     display: flex;
     flex-direction: column;
+    min-width: 30em;
     
+}
+
+.education > button {
+    font-family: inherit;
+    background-color: rgb(175, 206, 175);
+    border-width: 1px;
+    border-radius: 5px;
 }
