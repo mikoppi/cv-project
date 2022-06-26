@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import Description from './Description'
 import EducationInfo from './EducationInfo'
 import ExperienceInfo from './ExperienceInfo'
+import './prevStyles/MainSection.css'
 
 export default class MainSection extends Component {
   render() {
     const { info } = this.props
     return (
-      <div>
+      <div className='mainSection'>
         <Description value={info.personalInfo.description}/>
         <h2>Education</h2>
         {info.education.length!==0 && info.education.map(eduItem => {

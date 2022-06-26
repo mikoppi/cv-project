@@ -1,0 +1,20 @@
+.preview {
+    
+    display: flex;
+    flex-direction: column;
+    
+    background-color: lightsteelblue;
+    background-color: rgb(216, 216, 216);
+    border-radius: 1px;
+    box-shadow: rgba(211, 216, 240, 0.685) 0px 5px 15px;
+    width: 210mm;
+    height: 297mm;
+    
+}
+
+.preview > .content {
+    display: flex;
+    
+    flex-grow: 1;
+
+}

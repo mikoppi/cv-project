@@ -3,6 +3,7 @@ import CVForm from './components/CVForm'
 import uniqid from "uniqid";
 import Preview from './components/preview/Preview';
 import './styles/App.css'
+import Header from './Header';
 
 export default class App extends Component {
   constructor(props) {
@@ -124,23 +125,27 @@ handleDeleteExperience = (e,id) => {
   })
 }
 
+
 //then you pass the handlers as props to the child components and so on...
   render() {
     return (
-      <div className='app'>
-        <h1>CV Creator</h1>
-        <CVForm
-        onChangePersonal={this.handleChangePersonal}
-        education= {this.state.education}
-        onChangeEducation={this.handleChangeEducation}
-        onAddEducation= {this.handleAddEducation}
-        onDeleteEducation= {this.handleDeleteEducation}
-        experience= {this.state.experience}
-        onChangeExperience= {this.handleChangeExperience}
-        onAddExperience= {this.handleAddExperience}
-        onDeleteExperience={this.handleDeleteExperience}
-        />
-        <Preview cvInfo={this.state}/>
+      <div className='main'>
+        <Header/>
+        <div className='app'>
+          <CVForm
+          onChangePersonal={this.handleChangePersonal}
+          education= {this.state.education}
+          onChangeEducation={this.handleChangeEducation}
+          onAddEducation= {this.handleAddEducation}
+          onDeleteEducation= {this.handleDeleteEducation}
+          experience= {this.state.experience}
+          onChangeExperience= {this.handleChangeExperience}
+          onAddExperience= {this.handleAddExperience}
+          onDeleteExperience={this.handleDeleteExperience}
+          
+          />
+          <Preview cvInfo={this.state}/>
+        </div>
       </div>
     )
   }

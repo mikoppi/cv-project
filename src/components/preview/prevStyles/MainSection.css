@@ -1,0 +1,9 @@
+.mainSection{
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    font-weight: 300;
+    background-color: rgb(219, 219, 219);
+  }

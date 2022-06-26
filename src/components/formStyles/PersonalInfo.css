@@ -1,7 +1,7 @@
 .info {
     display: flex;
     flex-direction: column;
-    width: 30em;
+    width: 35em;
     gap:10px;
     margin-bottom: 10px;
 

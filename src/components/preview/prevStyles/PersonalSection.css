@@ -1,0 +1,11 @@
+.personal{
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    overflow: hidden;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './prevStyles/TitleSection.css'
 
 export default class TitleSection extends Component {
   render() {

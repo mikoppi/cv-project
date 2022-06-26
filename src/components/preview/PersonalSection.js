@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import './prevStyles/PersonalSection.css'
 
 export default class PersonalSection extends Component {
   render() {
     const { info } = this.props
     return (
-      <div>
+      <div className='personal'>
         <h2>Personal information</h2>
         <h3>Email</h3>
         <p>{info.email}</p>

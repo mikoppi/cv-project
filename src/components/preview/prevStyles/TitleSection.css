@@ -1,0 +1,13 @@
+.titleSection{
+    background-color: rgb(134, 212, 248);
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e9edf2;
+    padding-left: 50px;
+    gap:5px;
+    box-sizing: border-box;
+
+}

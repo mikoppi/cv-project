@@ -15,7 +15,7 @@ export default class CVForm extends Component {
             onChangeExperience,
             experience,
             onAddExperience,
-            onDeleteExperience
+            onDeleteExperience,
             }=this.props;
     return (
       <div className='cvform'>
@@ -30,7 +30,7 @@ export default class CVForm extends Component {
             experience = {experience}
             onAdd = {onAddExperience}
             onDelete={onDeleteExperience}/>
-        <button>Reset</button>
+        <button onClick={() => window.location.reload()}>Reset</button>
       </div>
     )
   }
