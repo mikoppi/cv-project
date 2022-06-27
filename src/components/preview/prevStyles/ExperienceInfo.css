@@ -1,0 +1,10 @@
+.expItem {
+    position: relative;
+    top:-20px;
+    height: 5em;
+    margin-bottom: 30px;
+}
+
+.expItem > * {
+    margin: 5px
+}

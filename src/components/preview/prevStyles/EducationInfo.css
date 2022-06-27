@@ -1,0 +1,10 @@
+.eduItem {
+
+    position: relative;
+    top:-20px;
+    height: 5em;
+}
+
+.eduItem > * {
+    margin: 5px
+}

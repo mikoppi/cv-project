@@ -3,9 +3,31 @@
     height: 100%;
     box-sizing: border-box;
     padding: 30px 20px;
-    overflow: hidden;
-    background-color: gray;
+    
+    background-color: rgb(206, 202, 202);
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap:10px;
+  
+
+    
   }
+
+.personal > h2 {
+  color: rgb(21, 126, 231);
+  margin-bottom: 30px;
+}
+
+.personal > * {
+  margin: 0;
+  
+}
+
+img {
+  height: 160px;
+  width: 220px;
+  position: relative;
+  right:10px;
+  top:-20px;
+  border-radius: 10px;
+}
